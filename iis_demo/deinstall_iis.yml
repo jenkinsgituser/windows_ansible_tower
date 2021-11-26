@@ -1,0 +1,15 @@
+---
+- name: De-Install IIS Web servie
+  hosts: windows
+  gather_facts: true
+  
+  tasks:
+  - name: stop iis service
+    win_service:
+      name: W3SVC
+      state: stopped
+        
+  - name: de-install iis
+    win_feature:
+      name: Web-Server
+      state: absent
