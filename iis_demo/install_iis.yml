@@ -1,6 +1,6 @@
 ---
 - name: Install IIS Web servie
-  hosts: windows
+  hosts: all
   gather_facts: true
   
   tasks:
