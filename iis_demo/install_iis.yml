@@ -17,5 +17,5 @@
         state: started
     - name: Create website index.html
       win_copy:
-        content: "<html><body><h1>Out site is alive!</h1><p><h3>{{ site_test_msg }}</h3></body></html>"
+        content: "<html><body><h1>Out site is alive!</h1><p><h3>{{ site_test_msg }}</h3></p></body></html>"
         dest: C:\Inetpub\wwwroot\index.html
