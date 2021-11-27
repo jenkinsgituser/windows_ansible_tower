@@ -6,6 +6,11 @@
   tasks:
     - name: Single line powershell
       win_shell: Get-Date -Format G
+    
+    - name: Create Powershell scripts
+      win_copy:
+        content: "This is my Second powershell script with Ansible Tower 2"
+        dest: C:\Temp\Myscript2.ps1  
 
     - name: Execute a powershell script
-      win_shell: C:\Temp\Myscript.ps1
+      win_shell: C:\Temp\Myscript2.ps1
