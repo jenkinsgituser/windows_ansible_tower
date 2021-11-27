@@ -9,7 +9,7 @@
     
     - name: Create Powershell scripts
       win_copy:
-        content: "This is my Second powershell script with Ansible Tower 2"
+        content: Write-Host "This is my second powershell script with Ansible Tower 2"
         dest: C:\Temp\Myscript2.ps1  
 
     - name: Execute a powershell script
