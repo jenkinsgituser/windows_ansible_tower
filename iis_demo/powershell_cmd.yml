@@ -1,0 +1,11 @@
+---
+- name: Powershell command
+  hosts: all
+  gather_facts: true
+  
+  tasks:
+    - name: Single line powershell
+      win_shell: Get-Date -Format G
+
+    - name: Execute a powershell script
+      win_shell: C:\Temp\Myscript.ps1
